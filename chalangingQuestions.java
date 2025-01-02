@@ -10,7 +10,7 @@ public class chalangingQuestions {
 		   For example, 245 would be 2 + 4 + 5 = 11.
 		*/
 	//BODY
-		System.out.println(sumOfDigits(24578000));  // Output: 11
+		System.out.println(sumOfDigits(245));  // Output: 11
 		
 		
 		/*2. Complete the method called passwordChecker that accepts the 
@@ -325,12 +325,143 @@ Hint: With firstPosition meaning the first position in an Array, and lastPositio
 	*/
 //_______________________________________________END______________________________________________
 
+    	
+    	//9
+    	/*Given an Array of words named arr and variables word1, word2, and word3 do the following:
+		Create a new Array called newArr that has word1, word2, and word3 as it's elements
+		Create another Array that is big enough to hold all of the words from the original Array arr, 
+		as well as the three new words. You can name this Array to your liking.
+		Write a loop to get the words from the original Array arr and put them into your new Array
+		Add the words from newArr into the new Array also
+		Finally, loop through your new Array and print each element to the console
+		An idea to get more practice with Arrays: You could create an Array for the three new words, and then loop 
+		through two Arrays to create your new Array.
+		
+		
+		// Create a new array with word1, word2, and word3
+        String[] newArr = {word1, word2, word3};
+
+        // Create another array
+        String[] thirdArray = {"grape", "honeydew"};
+
+        // Create a new array to hold all words
+        String[] combinedArr = new String[arr.length + newArr.length + thirdArray.length];
+
+        // Copy words from arr to combinedArr
+        for (int i = 0; i < arr.length; i++) {
+            combinedArr[i] = arr[i];
+        }
+
+        // Copy words from newArr to combinedArr
+        for (int i = 0; i < newArr.length; i++) {
+            combinedArr[arr.length + i] = newArr[i];
+        }
+
+        // Copy words from thirdArray to combinedArr
+        for (int i = 0; i < thirdArray.length; i++) {
+            combinedArr[arr.length + newArr.length + i] = thirdArray[i];
+        }
+
+        // Print each element in combinedArr
+        for (int i = 0; i < combinedArr.length; i++) {
+            System.out.println(combinedArr[i]);
+        }
+    }
+}
+
+
+//_______________________________________________END______________________________________________
+
+		//10.
+		 REVERSING AN ARRAY.
+
+Using the initialized Array named arr that uses five (5) integers provided by the user as elements.
+Create a new Array called reverseArr that is the reverse of the original Array arr
+Then write a loop that will iterate through each Array and print each element in the console
+Note: You should print the elements of both Arrays
+Hint: Both Array should have the same amounts of elements and therefore have the same lengths
+
+			Loop and priny oringinal array.
+		for(int i = 0; i < arr.length; i++){
+	    System.out.println(arr[i]);
+	}
+	
+			Declear new array called reverseArr, loop through it and print reversed array.
+		int[] reverseArr = new int[arr.length];
+		for(int i = 0; i < arr.length; i++){
+	    reverseArr[i] = arr[arr.length -1-i];
+	    System.out.println(reverseArr[i]);
+	}
+
+//_______________________________________________END______________________________________________
+
+
+		// 11
+		 Given a List of char called alphabet, search the List for the char stored in userLetter and print to the 
+		 console the index value of that char.
+		 
+		 int letterValue = alphabet.idexOf(userLetter);
+		 System.out.println(letterValue);
+		 
+//_______________________________________________END______________________________________________
+
+	//12
+	 Given a variable int called userNumber, create a List of Factors and print the List to the console.
+Create a List of Integer Factors by declaring a new List variable, name it factorNum
+Finds all the positive factors of userNumber using a loop from 1 to userNumber
+In the loop, store the factors of userNumber as elements of the factorNum List
+Finally, print the List to the console
+Note: All values of userNumber will have two (2) possible factors at a minimum: one (1) and userNumber.
+
+		Step 1: Declare and Initialize the List
+
+List<Integer> factorNum = new ArrayList<>();
+
+- We declare a new list called factorNum that will store integers.
+- We initialize the list using the ArrayList class, which is a common implementation of the List interface in Java.
+
+
+Step 2: Start the Loop
+
+for (int i = 1; i <= userNumber; i++) {
+
+- We start a for loop that will iterate from 1 to userNumber (inclusive).
+- The loop variable i is initialized to 1 and will increment by 1 at each iteration.
+
+
+Step 3: Check if i is a Factor
+
+if (userNumber % i == 0) {
+
+- Inside the loop, we check if i is a factor of userNumber by using the modulo operator (%).
+- If userNumber divided by i leaves no remainder (i.e., userNumber % i == 0), then i is a factor.
+
+
+Step 4: Add the Factor to the List
+
+factorNum.add(i);
+
+- If i is a factor, we add it to the factorNum list using the add() method.
+
+
+Step 5: Print the List
+
+System.out.println(factorNum);
+
+- After the loop finishes, we print the factorNum list to the console using System.out.println().
+- The list will contain all the factors of userNumber.
+
+//_______________________________________________END______________________________________________
+
+
+
+    */	
 	}
 	//1.
 	//METHOD.
 	public static int sumOfDigits(int digits) {
 	    int sum = 0;
-	    while (digits > 0) {
+	    for(int i = 0; i < digits; i++) {
 	        sum += digits % 10;
 	        digits /= 10;
 	    }
