@@ -4,6 +4,12 @@ public class week4Collections {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		
+		String name = "james";
+		int num = 5;
+		System.out.println(strBuilder(name, num));
+		
 /*String vs. StringBuilder
 
 
@@ -148,4 +154,12 @@ Research question:  Think about usefulness of Sets.  What applications make sens
 */
 	}
 
+	public static String strBuilder(String name, int num) {
+		
+		String start = "";
+		for(int i = 0; i < num; i++) {
+			start += name;
+		}
+		return start;
+	}
 }
