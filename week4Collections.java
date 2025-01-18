@@ -134,7 +134,7 @@ Questions to ask:
 1. Is an error thrown? 
 2. Does the duplicate get stored?
    
-vegetables.add("Carrot");
+vegetables.add("Carrot"); // no error thrown but the element will be printed as one object not two objects.
 System.out.println(vegetables);
 
 vegetables.add(null);
