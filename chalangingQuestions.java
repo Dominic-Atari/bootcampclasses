@@ -3,7 +3,7 @@ package bootcampClasses;
 public class chalangingQuestions {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		/*
 		1. Complete the method called sumOfDigits that takes an integer variable called
 		   digits. Then return the sum of all the digits in digits. 

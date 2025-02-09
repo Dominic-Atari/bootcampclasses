@@ -1,4 +1,4 @@
-package bootcampClasses;
+package bootcampClasses.week04;
 
 public class week4Collections {
 

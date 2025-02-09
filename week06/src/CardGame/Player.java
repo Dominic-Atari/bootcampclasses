@@ -1,4 +1,4 @@
-package CardGame;
+package bootcampClasses.week06.src.CardGame;
 
 import java.util.ArrayList;
 import java.util.List;

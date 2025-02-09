@@ -1,4 +1,4 @@
-package TikTakToeProject;
+package bootcampClasses.week06.src.TikTakToeProject;
 
 import java.util.Arrays;
 

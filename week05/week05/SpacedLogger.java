@@ -1,4 +1,4 @@
-package week05;
+package bootcampClasses.week05.week05;
 
 public class SpacedLogger implements Logger{
 	

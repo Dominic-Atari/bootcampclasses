@@ -1,4 +1,4 @@
-package week02;
+package bootcampClasses.week02.src.week02;
 
 public class Week02BooleanConditionalsLoopsLab {
 	

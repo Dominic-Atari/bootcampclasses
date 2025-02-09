@@ -1,4 +1,4 @@
-package bootcampClasses;
+package bootcampClasses.week03;
 
 public class week03ArraysAndMethods {
 

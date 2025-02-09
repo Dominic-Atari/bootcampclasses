@@ -1,4 +1,4 @@
-package week05;
+package bootcampClasses.Week5OOPS.src.week05;
 
 public class AsteriskLogger implements Logger{
 

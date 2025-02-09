@@ -1,4 +1,4 @@
-package CardGame;
+package bootcampClasses.week06.src.CardGame;
 
 public class Card {
 	private int value;
